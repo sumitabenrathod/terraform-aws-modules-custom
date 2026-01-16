@@ -3,6 +3,10 @@ variable "name" {
   type        = string
 }
 
+variable "region" {
+  type = string  
+}
+
 variable "cidr" {
   description = "VPC CIDR block"
   type        = string
@@ -13,18 +17,18 @@ variable "azs" {
   type        = list(string)
 }
 
-variable "public_subnets" {
-  description = "Public subnet CIDRs"
-  type        = list(string)
-}
+# variable "public_subnets" {
+#   description = "Public subnet CIDRs"
+#   type        = list(string)
+# }
 
-variable "private_subnets" {
-  description = "Private subnet CIDRs"
-  type        = list(string)
-}
+# variable "private_subnets" {
+#   description = "Private subnet CIDRs"
+#   type        = list(string)
+# }
 
-variable "tags" {
-  description = "Common resource tags"
-  type        = map(string)
-  default     = {}
-}
+# variable "tags" {
+#   description = "Common resource tags"
+#   type        = map(string)
+#   default     = {}
+# }
